@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Teko"; 
+    src: url("teko.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+img{
+    width: 250px;
+}
+
+body{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25vh;
+    font-family: 'Teko';
+    color: #2d2d2d;
+}
+
+.title{
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.suptitle{
+    font-size: 50px;
+    text-transform: uppercase;
+}
