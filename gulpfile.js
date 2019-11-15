@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
-const autoprefixer = require('gulp-autoprefixer');
+//const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const del = require('del');
 const browserSync = require('browser-sync').create();
@@ -8,14 +8,31 @@ const htmlmin = require('gulp-htmlmin');
 var rename = require("gulp-rename");
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
-
+const postcss = require('gulp-postcss');
 const imagemin = require('gulp-imagemin');
 const image = require('gulp-image');    
+//const autoprefixer = [require('autoprefixer')({ grid: true, browsers: ['last 2 versions', 'ie 6-8', 'Firefox > 20']  })];
+const autoprefixer = require('autoprefixer');
+
+gulp.task('autoprefixer1', () => {
+    return gulp.src(cssFiles)
+      .pipe(sourcemaps.init())
+      .pipe(postcss([ autoprefixer(
+          {
+            overrideBrowserslist: ['last 2 versions'],
+            grid : "autoplace",
+            cascade:false
+          }
+      ) ]))
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest('./dest'))
+  })
+
 
 //Источник CSS файлов
 const cssFiles = [
-    './app/styles/media.css',
-    './app/styles/style.css'
+    './app/styles/style.css',
+    './app/styles/media.css'
 ];
 
 //Источник JS файлов
@@ -49,13 +66,23 @@ function sasscomp(){
 //Добавление автопрефиксоф
 //Минификация файла
 //Сохранение в папку ./dist/styles
+
 function styles(){
     return gulp.src(cssFiles)
     .pipe(concat('all.css'))
-    .pipe(autoprefixer({
-        overrideBrowserslist: ['>0.1%'],
-        cascade: false
-    }))
+    
+    //.pipe(sourcemaps.init())
+    .pipe(postcss([ autoprefixer(
+        {
+          overrideBrowserslist: ['last 2 versions'],
+          grid : "autoplace",
+          cascade:false
+        }
+    ) ]))
+    //.pipe(sourcemaps.write('.'))
+
+
+
     .pipe(cleanCSS({level: 2 }))
     .pipe(gulp.dest('./dist/styles'))
     .pipe(browserSync.stream());
@@ -160,3 +187,8 @@ gulp.task('compressimg', async function() {
       }))
       .pipe(gulp.dest('./dist/images'));
   });
+
+
+
+
+

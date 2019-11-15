@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <title>DrNona</title>
     <link rel="shortcut icon" href="./dist/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./dist/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/styles/scrol.css">
     <link rel="stylesheet" href="./dist/styles/all.css">
 
 </head>
@@ -21,7 +22,12 @@
                     <img src="./dist/images/logo.png" alt="isLogo">
                 </div>
                 <div class="phoneNumber">
-                    <img src="./dist/images/telephone.svg" alt="" class="phoneNumber_icon">
+                    <svg class="phoneNumber_icon" x="0px" y="0px" viewbox="0 0 511.999 511.999" width="512px"
+                        height="512px">
+                        <path
+                            d="M498.827,377.633l-63.649-63.649c-17.548-17.547-46.102-17.547-63.649,0l-28.931,28.931    c-13.294,13.294-34.926,13.29-48.215,0.005l-125.4-125.507c-13.325-13.325-13.327-34.892,0-48.219    c4.66-4.66,18.041-18.041,28.931-28.931c17.471-17.47,17.715-45.935-0.017-63.665l-63.632-63.432    C116.717-4.381,88.164-4.381,70.663,13.12C57.567,26.102,53.343,30.29,47.471,36.111c-63.28,63.279-63.28,166.242-0.003,229.519    l198.692,198.796c63.428,63.429,166.088,63.434,229.521,0l23.146-23.145C516.375,423.733,516.375,395.181,498.827,377.633z     M91.833,34.382c5.849-5.849,15.365-5.85,21.233,0.016l63.632,63.432c5.863,5.863,5.863,15.352,0,21.216l-10.609,10.608    l-84.81-84.81L91.833,34.382z M267.38,443.213L68.687,244.415c-48.958-48.958-51.649-125.833-8.276-178.006l84.564,84.564    c-22.22,25.189-21.294,63.572,2.787,87.653l125.396,125.501c0.001,0.001,0.003,0.003,0.004,0.004    c24.055,24.056,62.436,25.042,87.656,2.792l84.566,84.566C393.377,494.787,316.675,492.508,267.38,443.213z M477.612,420.065    l-10.609,10.609l-84.865-84.866l10.607-10.608c5.85-5.849,15.367-5.85,21.217,0l63.649,63.649    C483.461,404.699,483.461,414.217,477.612,420.065z" />
+                    </svg>
+
                     <h3 class="phoneNumber_num">+77077077777</h3>
                 </div>
                 <div class="header_button button connectMeBt">
@@ -29,31 +35,60 @@
                         связаться со мной
                     </button>
                 </div>
+                <div class="header_plaseForMenuButton" id="menuButton">
+                    <svg x="0px" y="0px" viewbox="0 0 459 459">
+                        <path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z" />
+                    </svg>
+                </div>
             </div>
         </div>
         <div class="nav_container">
             <nav class="nav">
-                <ul>
-                    <div class="nav_item"><a href="">Главная</a></div>
+                <ul id="primary-menu" class="menu">
+                    <li id="menu-item-6"
+                        class="menu-item  menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-6">
+                        <a href="index.html" aria-current="page">Главная</a></li>
+                    <li id="menu-item-9"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9">
+                        <a href="products.html">
+                            
+                            Продукция
 
-                    <div class="nav_item"><a href="">Продукция</a>
-                        <div class="nav_supItem">
-                            <li><a href="">Питание кожи</a></li>
-                            <li><a href="">Востановление</a></li>
-                            <li><a href="">Омоложение</a></li>
-                            <li><a href="">Детская линия</a></li>
-                        </div>
-                    </div>
 
-                    <li class="nav_item"><a href="">О нас</a></li>
-                    <div class="nav_item"><a href="">Бизнес возможности</a>
-                        <div class="nav_supItem">
-                            <li><a href="">Бизнес план</a></li>
-                            <li><a href="">Реферальная система</a></li>
-                        </div>
-                    </div>
-                    <li class="nav_item"><a href="">Блог</a></li>
-                    <li class="nav_item"><a href="">Новости</a></li>
+                        </a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-8"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a
+                                    href="http://#">Питание кожи</a></li>
+                            <li id="menu-item-14"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
+                                    href="http://#">Восстановление</a></li>
+                            <li id="menu-item-15"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a
+                                    href="http://#">Омоложение</a></li>
+                            <li id="menu-item-16"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a
+                                    href="http://#">Детская линия</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
+                        <a href="http://#">О нас</a></li>
+                    <li id="menu-item-11"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11">
+                        <a href="http://#">Бизнес возможности</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-17"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a
+                                    href="http://#">Бизнес план</a></li>
+                            <li id="menu-item-18"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a
+                                    href="http://#">Реферальная система</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
+                        <a href="http://#">Блог</a></li>
+                    <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
+                        <a href="http://#">Новости</a></li>
                 </ul>
             </nav>
         </div>
@@ -76,8 +111,10 @@
             </div>
         </div>
     </section>
+
     <section>
         <div class="container">
+
             <div class="titleContainer">
                 <h2 class="sectionTitle">
                     питание кожи
@@ -100,72 +137,170 @@
                     </div>
                 </div>
             </div>
+            <div class="productItems">
+                <div class="itemsContainer">
 
-            <div class="itemsContainer">
-                <div class="itemsContainer_wraper" id="polosa">
-                    <div class="item">
-                        <div class="itmeImg">
-                            <img src="./dist/images/item.png" alt="">
+                    <div class="itemsContainer_wraper" id="polosa">
+                        <div class="item">
+                            <div class="itmeImg">
+                                <img src="./dist/images/item.png" alt="">
+                            </div>
+                            <div class="itemName">
+                                <h3>Масло Ши для телa1</h3>
+                            </div>
+                            <div class="itemButton button">
+                                <button>
+                                    подробнее
+                                </button>
+                            </div>
+                            <h4 class="itemArt">
+                                артикуль 12234
+                            </h4>
                         </div>
-                        <div class="itemName">
-                            <h3>Масло Ши для телa1</h3>
+                        <div class="item">
+                            <div class="itmeImg">
+                                <img src="./dist/images/item.png" alt="">
+                            </div>
+                            <div class="itemName">
+                                <h3>Масло Ши для телa2</h3>
+                            </div>
+                            <div class="itemButton button">
+                                <button>
+                                    подробнее
+                                </button>
+                            </div>
+                            <h4 class="itemArt">
+                                артикуль 12234
+                            </h4>
                         </div>
-                        <div class="itemButton button">
-                            <button>
-                                подробнее
-                            </button>
+                        <div class="item">
+                            <div class="itmeImg">
+                                <img src="./dist/images/item.png" alt="arrow">
+                            </div>
+                            <div class="itemName">
+                                <h3>Масло Ши для телa3</h3>
+                            </div>
+                            <div class="itemButton button">
+                                <button>
+                                    подробнее
+                                </button>
+                            </div>
+                            <h4 class="itemArt">
+                                артикуль 12234
+                            </h4>
                         </div>
-                        <h4 class="itemArt">
-                            артикуль 12234
-                        </h4>
-                    </div>
-                    <div class="item">
-                        <div class="itmeImg">
-                            <img src="./dist/images/item.png" alt="">
+                        <div class="item">
+                            <div class="itmeImg">
+                                <img src="./dist/images/item.png" alt="arrow">
+                            </div>
+                            <div class="itemName">
+                                <h3>Масло Ши для телa4</h3>
+                            </div>
+                            <div class="itemButton button">
+                                <button>
+                                    подробнее
+                                </button>
+                            </div>
+                            <h4 class="itemArt">
+                                артикуль 12234
+                            </h4>
                         </div>
-                        <div class="itemName">
-                            <h3>Масло Ши для телa2</h3>
+                        <div class="item">
+                            <div class="itmeImg">
+                                <img src="./dist/images/item.png" alt="arrow">
+                            </div>
+                            <div class="itemName">
+                                <h3>Продукт 5</h3>
+                            </div>
+                            <div class="itemButton button">
+                                <button>
+                                    подробнее
+                                </button>
+                            </div>
+                            <h4 class="itemArt">
+                                артикуль 12234
+                            </h4>
                         </div>
-                        <div class="itemButton button">
-                            <button>
-                                подробнее
-                            </button>
+                        <div class="item">
+                            <div class="itmeImg">
+                                <img src="./dist/images/item.png" alt="arrow">
+                            </div>
+                            <div class="itemName">
+                                <h3>Продукт 6</h3>
+                            </div>
+                            <div class="itemButton button">
+                                <button>
+                                    подробнее
+                                </button>
+                            </div>
+                            <h4 class="itemArt">
+                                артикуль 12234
+                            </h4>
                         </div>
-                        <h4 class="itemArt">
-                            артикуль 12234
-                        </h4>
-                    </div>
-                    <div class="item">
-                        <div class="itmeImg">
-                            <img src="./dist/images/item.png" alt="arrow">
+                        <div class="item">
+                            <div class="itmeImg">
+                                <img src="./dist/images/item.png" alt="arrow">
+                            </div>
+                            <div class="itemName">
+                                <h3>Продукт 7</h3>
+                            </div>
+                            <div class="itemButton button">
+                                <button>
+                                    подробнее
+                                </button>
+                            </div>
+                            <h4 class="itemArt">
+                                артикуль 12234
+                            </h4>
                         </div>
-                        <div class="itemName">
-                            <h3>Масло Ши для телa3</h3>
+                        <div class="item">
+                            <div class="itmeImg">
+                                <img src="./dist/images/item.png" alt="arrow">
+                            </div>
+                            <div class="itemName">
+                                <h3>Продукт 8</h3>
+                            </div>
+                            <div class="itemButton button">
+                                <button>
+                                    подробнее
+                                </button>
+                            </div>
+                            <h4 class="itemArt">
+                                артикуль 12234
+                            </h4>
                         </div>
-                        <div class="itemButton button">
-                            <button>
-                                подробнее
-                            </button>
+                        <div class="item">
+                            <div class="itmeImg">
+                                <img src="./dist/images/item.png" alt="arrow">
+                            </div>
+                            <div class="itemName">
+                                <h3>Продукт 9</h3>
+                            </div>
+                            <div class="itemButton button">
+                                <button>
+                                    подробнее
+                                </button>
+                            </div>
+                            <h4 class="itemArt">
+                                артикуль 12234
+                            </h4>
                         </div>
-                        <h4 class="itemArt">
-                            артикуль 12234
-                        </h4>
-                    </div>
-                    <div class="item">
-                        <div class="itmeImg">
-                            <img src="./dist/images/item.png" alt="arrow">
+                        <div class="item">
+                            <div class="itmeImg">
+                                <img src="./dist/images/item.png" alt="arrow">
+                            </div>
+                            <div class="itemName">
+                                <h3>Продукт 10</h3>
+                            </div>
+                            <div class="itemButton button">
+                                <button>
+                                    подробнее
+                                </button>
+                            </div>
+                            <h4 class="itemArt">
+                                артикуль 12234
+                            </h4>
                         </div>
-                        <div class="itemName">
-                            <h3>Масло Ши для телa4</h3>
-                        </div>
-                        <div class="itemButton button">
-                            <button>
-                                подробнее
-                            </button>
-                        </div>
-                        <h4 class="itemArt">
-                            артикуль 12234
-                        </h4>
                     </div>
                 </div>
             </div>
@@ -185,8 +320,7 @@
             <div class="newsContainer">
                 <div class="newsItem">
                     <div class="newsimgWraper">
-                        <div class="imgFrame">
-                        </div>
+                        <div class="imgFrame"></div>
                         <div class="newsImg">
                             <img src="./dist/images/newsimg.png" alt="">
                         </div>
@@ -196,37 +330,29 @@
                         <h2 class="newsTitle">Влияние косметики на кожу</h2>
                         <p class="newsText">С другой стороны начало повседневной работы по формированию позиции в
                             значительной степени
-                            обуславливает создание систем массового участия. Разнообразный и богатый опыт новая модель
+                            <!-- обуславливает создание систем массового участия. Разнообразный и богатый опыт новая модель
                             организационной. <br> С другой стороны начало повседневной работы по формированию позиции в
                             значительной степени
-                            обуславливает создание систем массового участия. </p>
+                            обуславливает создание систем массового участия. --></p> 
                         <div class="newsFooter">
                             <div class="newsViews">
 
 
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     x="0px" y="0px" viewbox="0 0 512 512" height="15px" class="viewSvg">
-                                    <g>
-                                        <g>
-                                            <g>
-                                                <path
-                                                    d="M503.698,231.895c-28.735-36.843-65.956-67.318-107.637-88.128c-42.548-21.243-88.321-32.265-136.104-32.843    c-1.316-0.036-6.6-0.036-7.916,0c-47.782,0.579-93.556,11.6-136.104,32.843c-41.681,20.81-78.9,51.284-107.636,88.128    c-11.07,14.193-11.07,34.018,0,48.211c28.735,36.843,65.955,67.318,107.636,88.128c42.548,21.243,88.321,32.265,136.104,32.843    c1.316,0.036,6.6,0.036,7.916,0c47.782-0.579,93.556-11.6,136.104-32.843c41.681-20.81,78.901-51.284,107.637-88.128    C514.768,265.911,514.768,246.088,503.698,231.895z M125.242,349.599c-38.92-19.432-73.678-47.892-100.517-82.303    c-5.187-6.651-5.187-15.94,0-22.591c26.838-34.411,61.596-62.871,100.517-82.303c11.054-5.518,22.342-10.29,33.839-14.33    c-29.578,26.588-48.213,65.12-48.213,107.928c0,42.81,18.636,81.345,48.217,107.932    C147.588,359.892,136.297,355.118,125.242,349.599z M256,380.303c-68.542,0-124.304-55.762-124.304-124.304    S187.458,131.696,256,131.696S380.304,187.458,380.304,256S324.542,380.303,256,380.303z M487.275,267.295    c-26.838,34.411-61.596,62.871-100.517,82.303c-11.041,5.512-22.322,10.263-33.805,14.299    c29.558-26.587,48.179-65.107,48.179-107.898c0-42.814-18.64-81.351-48.223-107.939c11.5,4.041,22.793,8.819,33.85,14.34    c38.92,19.432,73.678,47.892,100.517,82.303C492.462,251.355,492.462,260.644,487.275,267.295z"
-                                                    class="viewSvg" fill="#000000" />
-                                            </g>
-                                        </g>
-                                        <g>
-                                            <g>
-                                                <path
-                                                    d="M256,202.804c-29.332,0-53.195,23.863-53.195,53.195s23.863,53.195,53.195,53.195s53.195-23.863,53.195-53.195    C309.196,226.667,285.333,202.804,256,202.804z M256,288.367c-17.847,0-32.368-14.519-32.368-32.368    c0-17.848,14.519-32.367,32.368-32.367c17.847,0,32.367,14.519,32.367,32.367C288.368,273.848,273.847,288.367,256,288.367z"
-                                                    class="viewSvg" fill="#000000" />
-                                            </g>
-                                        </g>
-                                    </g>
+
+                                    <path
+                                        d="M503.698,231.895c-28.735-36.843-65.956-67.318-107.637-88.128c-42.548-21.243-88.321-32.265-136.104-32.843    c-1.316-0.036-6.6-0.036-7.916,0c-47.782,0.579-93.556,11.6-136.104,32.843c-41.681,20.81-78.9,51.284-107.636,88.128    c-11.07,14.193-11.07,34.018,0,48.211c28.735,36.843,65.955,67.318,107.636,88.128c42.548,21.243,88.321,32.265,136.104,32.843    c1.316,0.036,6.6,0.036,7.916,0c47.782-0.579,93.556-11.6,136.104-32.843c41.681-20.81,78.901-51.284,107.637-88.128    C514.768,265.911,514.768,246.088,503.698,231.895z M125.242,349.599c-38.92-19.432-73.678-47.892-100.517-82.303    c-5.187-6.651-5.187-15.94,0-22.591c26.838-34.411,61.596-62.871,100.517-82.303c11.054-5.518,22.342-10.29,33.839-14.33    c-29.578,26.588-48.213,65.12-48.213,107.928c0,42.81,18.636,81.345,48.217,107.932    C147.588,359.892,136.297,355.118,125.242,349.599z M256,380.303c-68.542,0-124.304-55.762-124.304-124.304    S187.458,131.696,256,131.696S380.304,187.458,380.304,256S324.542,380.303,256,380.303z M487.275,267.295    c-26.838,34.411-61.596,62.871-100.517,82.303c-11.041,5.512-22.322,10.263-33.805,14.299    c29.558-26.587,48.179-65.107,48.179-107.898c0-42.814-18.64-81.351-48.223-107.939c11.5,4.041,22.793,8.819,33.85,14.34    c38.92,19.432,73.678,47.892,100.517,82.303C492.462,251.355,492.462,260.644,487.275,267.295z"
+                                        class="viewSvg" fill="#000000" />
+
+                                    <path
+                                        d="M256,202.804c-29.332,0-53.195,23.863-53.195,53.195s23.863,53.195,53.195,53.195s53.195-23.863,53.195-53.195    C309.196,226.667,285.333,202.804,256,202.804z M256,288.367c-17.847,0-32.368-14.519-32.368-32.368    c0-17.848,14.519-32.367,32.368-32.367c17.847,0,32.367,14.519,32.367,32.367C288.368,273.848,273.847,288.367,256,288.367z"
+                                        class="viewSvg" fill="#000000" />
                                 </svg>
 
-
-
-                                <h4>57 просмотров</h4>
+                                <h4>
+                                    <nobr>57 просмотров</nobr>
+                                </h4>
                             </div>
                             <div class="button">
                                 <button>читать полностью</button>
@@ -269,7 +395,9 @@
 
 
 
-                                <h4>14 просмотров</h4>
+                                <h4>
+                                    <nobr>14 просмотров</nobr>
+                                </h4>
                             </div>
                             <div class="button">
                                 <button>читать полностью</button>
@@ -281,6 +409,7 @@
             </div>
         </div>
     </section>
+ 
     <section>
         <div class="container bussines">
             <div class="titleContainer">
@@ -335,11 +464,11 @@
                     <div class="bussinesItem_content">
                         <h1 class="bussinesItem_content_num">3</h1>
                         <p class="bussinesItem_content_text">
-                                Выстройте свою <br>личную 
-                                команду партнёров. <br><br>
-                                С увеличением команды <br>
-                                партнёров — Вы значительно<br> 
-                                увеличите ваш заработок.
+                            Выстройте свою <br>личную
+                            команду партнёров. <br><br>
+                            С увеличением команды <br>
+                            партнёров — Вы значительно<br>
+                            увеличите ваш заработок.
                         </p>
                     </div>
                 </div>
@@ -348,9 +477,9 @@
         </div>
     </section>
 
-
+   
     <section id="quetionForm">
-        <div class="quetionForm container">
+        <div class="quetionForm">
             <div class="quetionForm_Img">
                 <img src="./dist/images/formImg.png" alt="">
                 <div class="quetionForm_Img_frame"></div>
@@ -360,7 +489,8 @@
                     <h2 class="quetionForm_title">Остались вопросы?</h2>
                 </label>
                 <div>
-                    <input class="formInput" id="POST-name" type="text" name="first_name" placeholder="Как к вам обращаться?">
+                    <input class="formInput" id="POST-name" type="text" name="first_name"
+                        placeholder="Как к вам обращаться?">
                 </div>
                 <div>
                     <input class="formInput" id="POST-phone" type="text" name="phone"
@@ -377,13 +507,13 @@
             </form>
         </div>
     </section>
+ 
     <footer>
         <div class="footerGgrayBg">
             <div class="container footerContainer">
                 <div class="footerContact">
                     <h3 class="footerTitle">Контакты</h3>
-                    <p class="footerText">
-
+                    <p class="footerText footerNumber">
                         <svg viewbox="0 0 511.999 511.999" class="footerIcon">
                             <path
                                 d="M498.827,377.633l-63.649-63.649c-17.548-17.547-46.102-17.547-63.649,0l-28.931,28.931    c-13.294,13.294-34.926,13.29-48.215,0.005l-125.4-125.507c-13.325-13.325-13.327-34.892,0-48.219    c4.66-4.66,18.041-18.041,28.931-28.931c17.471-17.47,17.715-45.935-0.017-63.665l-63.632-63.432    C116.717-4.381,88.164-4.381,70.663,13.12C57.567,26.102,53.343,30.29,47.471,36.111c-63.28,63.279-63.28,166.242-0.003,229.519    l198.692,198.796c63.428,63.429,166.088,63.434,229.521,0l23.146-23.145C516.375,423.733,516.375,395.181,498.827,377.633z     M91.833,34.382c5.849-5.849,15.365-5.85,21.233,0.016l63.632,63.432c5.863,5.863,5.863,15.352,0,21.216l-10.609,10.608    l-84.81-84.81L91.833,34.382z M267.38,443.213L68.687,244.415c-48.958-48.958-51.649-125.833-8.276-178.006l84.564,84.564    c-22.22,25.189-21.294,63.572,2.787,87.653l125.396,125.501c0.001,0.001,0.003,0.003,0.004,0.004    c24.055,24.056,62.436,25.042,87.656,2.792l84.566,84.566C393.377,494.787,316.675,492.508,267.38,443.213z M477.612,420.065    l-10.609,10.609l-84.865-84.866l10.607-10.608c5.85-5.849,15.367-5.85,21.217,0l63.649,63.649    C483.461,404.699,483.461,414.217,477.612,420.065z" />
@@ -426,14 +556,12 @@
                                     <a href=""> Влияние косметики на кожу</a>
                                 </p>
                                 <h4 class="footerNewItem_view">
-                                    <svg viewbox="0 0 512 512" height="15px">
+                                    <svg viewbox="0 0 512 512">
                                         <path
-                                            d="M503.698,231.895c-28.735-36.843-65.956-67.318-107.637-88.128c-42.548-21.243-88.321-32.265-136.104-32.843    c-1.316-0.036-6.6-0.036-7.916,0c-47.782,0.579-93.556,11.6-136.104,32.843c-41.681,20.81-78.9,51.284-107.636,88.128    c-11.07,14.193-11.07,34.018,0,48.211c28.735,36.843,65.955,67.318,107.636,88.128c42.548,21.243,88.321,32.265,136.104,32.843    c1.316,0.036,6.6,0.036,7.916,0c47.782-0.579,93.556-11.6,136.104-32.843c41.681-20.81,78.901-51.284,107.637-88.128    C514.768,265.911,514.768,246.088,503.698,231.895z M125.242,349.599c-38.92-19.432-73.678-47.892-100.517-82.303    c-5.187-6.651-5.187-15.94,0-22.591c26.838-34.411,61.596-62.871,100.517-82.303c11.054-5.518,22.342-10.29,33.839-14.33    c-29.578,26.588-48.213,65.12-48.213,107.928c0,42.81,18.636,81.345,48.217,107.932    C147.588,359.892,136.297,355.118,125.242,349.599z M256,380.303c-68.542,0-124.304-55.762-124.304-124.304    S187.458,131.696,256,131.696S380.304,187.458,380.304,256S324.542,380.303,256,380.303z M487.275,267.295    c-26.838,34.411-61.596,62.871-100.517,82.303c-11.041,5.512-22.322,10.263-33.805,14.299    c29.558-26.587,48.179-65.107,48.179-107.898c0-42.814-18.64-81.351-48.223-107.939c11.5,4.041,22.793,8.819,33.85,14.34    c38.92,19.432,73.678,47.892,100.517,82.303C492.462,251.355,492.462,260.644,487.275,267.295z"
-                                            fill="#fff" />
+                                            d="M503.698,231.895c-28.735-36.843-65.956-67.318-107.637-88.128c-42.548-21.243-88.321-32.265-136.104-32.843    c-1.316-0.036-6.6-0.036-7.916,0c-47.782,0.579-93.556,11.6-136.104,32.843c-41.681,20.81-78.9,51.284-107.636,88.128    c-11.07,14.193-11.07,34.018,0,48.211c28.735,36.843,65.955,67.318,107.636,88.128c42.548,21.243,88.321,32.265,136.104,32.843    c1.316,0.036,6.6,0.036,7.916,0c47.782-0.579,93.556-11.6,136.104-32.843c41.681-20.81,78.901-51.284,107.637-88.128    C514.768,265.911,514.768,246.088,503.698,231.895z M125.242,349.599c-38.92-19.432-73.678-47.892-100.517-82.303    c-5.187-6.651-5.187-15.94,0-22.591c26.838-34.411,61.596-62.871,100.517-82.303c11.054-5.518,22.342-10.29,33.839-14.33    c-29.578,26.588-48.213,65.12-48.213,107.928c0,42.81,18.636,81.345,48.217,107.932    C147.588,359.892,136.297,355.118,125.242,349.599z M256,380.303c-68.542,0-124.304-55.762-124.304-124.304    S187.458,131.696,256,131.696S380.304,187.458,380.304,256S324.542,380.303,256,380.303z M487.275,267.295    c-26.838,34.411-61.596,62.871-100.517,82.303c-11.041,5.512-22.322,10.263-33.805,14.299    c29.558-26.587,48.179-65.107,48.179-107.898c0-42.814-18.64-81.351-48.223-107.939c11.5,4.041,22.793,8.819,33.85,14.34    c38.92,19.432,73.678,47.892,100.517,82.303C492.462,251.355,492.462,260.644,487.275,267.295z" />
 
                                         <path
-                                            d="M256,202.804c-29.332,0-53.195,23.863-53.195,53.195s23.863,53.195,53.195,53.195s53.195-23.863,53.195-53.195    C309.196,226.667,285.333,202.804,256,202.804z M256,288.367c-17.847,0-32.368-14.519-32.368-32.368    c0-17.848,14.519-32.367,32.368-32.367c17.847,0,32.367,14.519,32.367,32.367C288.368,273.848,273.847,288.367,256,288.367z"
-                                            fill="#fff" />
+                                            d="M256,202.804c-29.332,0-53.195,23.863-53.195,53.195s23.863,53.195,53.195,53.195s53.195-23.863,53.195-53.195    C309.196,226.667,285.333,202.804,256,202.804z M256,288.367c-17.847,0-32.368-14.519-32.368-32.368    c0-17.848,14.519-32.367,32.368-32.367c17.847,0,32.367,14.519,32.367,32.367C288.368,273.848,273.847,288.367,256,288.367z" />
                                     </svg>
 
                                     57 просмотров
@@ -531,8 +659,10 @@
         </div>
     </footer>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="./dist/scripts/all.js" defer></script>
+    <script src="jquery.touchSwipe.min.js"></script>
+    <script src="/dist/scripts/all.js" defer></script>
 </body>
 
 </html>

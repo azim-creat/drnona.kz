@@ -1,15 +1,128 @@
+h2 {
+  font-family: Teko;
+  color: #bb9864;
+  text-transform: uppercase; }
+
+.sectionTitle {
+  font-size: 50px;
+  color: #bb9864; }
+
+h1 {
+  font-family: Teko;
+  color: #444349;
+  text-transform: uppercase; }
+
+.nav {
+  font-family: Teko;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase; }
+
+button {
+  margin: 0;
+  border: 2px #444349 solid;
+  padding: 10px 20px;
+  font-family: Teko;
+  font-size: 25px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #444349;
+  cursor: pointer; }
+
+.button :hover {
+  background: #bb9864;
+  border: 2px #bb9864 solid;
+  color: white; }
+
 @font-face {
   font-family: "Teko";
-  src: url("./fonts/teko.ttf"); }
+  src: url("../fonts/teko-webfont.eot");
+  src: url("../fonts/teko-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/teko-webfont.woff") format("woff"), url("../fonts/teko.ttf") format("truetype");
+  src: url("../fonts/teko.ttf");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/ontserrat-Medium.ttf"); }
+  src: url("../fonts/montserrat-medium-webfont.eot");
+  src: url("../fonts/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-medium-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-Medium.ttf");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/ontserrat-MediumItalic.ttf");
+  src: url("../fonts/montserrat-mediumitalic-webfont.eot");
+  src: url("../fonts/montserrat-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-mediumitalic-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-MediumItalic.ttf");
+  font-weight: normal;
   font-style: italic; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+div {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  margin: 0; }
+
+button {
+  line-height: 1;
+  padding-bottom: 6px;
+  transition: 0.25s ease; }
+
+body {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: #444349; }
+
+body:scrollbar-track {
+  background-color: #f5f5f5; }
+
+body:scrollbar {
+  width: 8px;
+  background-color: #95e1d3; }
+
+body:scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #95e1d3; }
+
+h1 {
+  font-size: 60px; }
+
+.newsTitle {
+  font-size: 40px;
+  color: #444349; }
+
+.newsText {
+  font-size: 16px;
+  line-height: 1.6; }
+
+.sectionTitle {
+  grid-area: sectionTitle1; }
+
+h3 {
+  font-family: Teko;
+  font-size: 30px;
+  color: #444349;
+  letter-spacing: 0.06;
+  text-transform: uppercase; }
+
+h4 {
+  font: italic 14px 'Montserrat'; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
 
 h2 {
   font-family: Teko;
@@ -47,109 +160,77 @@ button {
   border: 2px #bb9864 solid;
   color: white; }
 
-button {
-  line-height: 1;
-  padding-bottom: 6px;
-  transition: 0.25s ease; }
-
-body {
-  font-family: Montserrat;
-  font-size: 16px;
-  color: #444349; }
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-div {
-  margin: 0;
-  padding: 0;
-  font-weight: normal; }
-
-h1 {
-  font-size: 60px; }
-
-.newsTitle {
-  font-size: 40px;
-  color: #444349; }
-
-.newsText {
-  font-size: 16px;
-  line-height: 1.6; }
-
-h3 {
-  font-family: Teko;
-  font-size: 30px;
-  color: #444349;
-  letter-spacing: 0.06;
-  text-transform: uppercase; }
-
-h4 {
-  font: italic 14px Montserrat; }
-
-a {
-  text-decoration: none;
-  color: white;
-  padding: 0;
-  margin: 0; }
-
-.container {
-  width: 1200px;
-  margin: 0 auto; }
-
 .hederup {
+  margin-top: 5px;
   display: grid;
+  -ms-grid-columns: 1fr 1fr 250px;
   grid-template-columns: 1fr 1fr 250px;
+  -ms-grid-columns: 1fr 1fr 250px;
   justify-content: space-around;
   align-items: center; }
 
 .phoneNumber_icon {
-  height: 25px; }
+  height: 25px;
+  width: 35px;
+  fill: #444349; }
 
 .phoneNumber {
+  -ms-grid-column: 2;
   display: flex;
-  justify-self: end; }
+  justify-self: end;
+  -ms-grid-column-align: end; }
   .phoneNumber img {
     margin-right: 10px; }
 
 .header_button {
+  -ms-grid-column: 3;
+  -ms-grid-column-align: end;
   justify-self: end; }
 
-/*.nav_container {
-  background-color: $gray;
-}
-.nav {
-  width: 1200px;
-  margin: 0 auto;
-  @extend %wTitle;
-  display: flex;
-  justify-content: space-between;
-  background-color: $gray;
-  color: white;
-  a {
-    color: white;
-    padding: 15px 40px;
-  }
-}
+.header_plaseForMenuButton {
+  -ms-grid-column: 4;
+  padding: 0 20px;
+  width: 40px;
+  fill: #444349; }
+  .header_plaseForMenuButton svg {
+    display: none; }
 
-.nav_item {
-  border-top: 4px $gray solid;
-  margin: 15px 0;
-  :hover {
-    background-color: #575560;
-    border-top: 4px $gold solid;
-  }
-}
-.nav_supItem{
-  border-left: 4px $gray solid;
-  :hover {
-    background-color: #575560;
-    border-left: 4px $gold solid;
-    border-top: 4px #575560 solid;
-  }
-}*/
+h2 {
+  font-family: Teko;
+  color: #bb9864;
+  text-transform: uppercase; }
+
+.sectionTitle {
+  font-size: 50px;
+  color: #bb9864; }
+
+h1 {
+  font-family: Teko;
+  color: #444349;
+  text-transform: uppercase; }
+
+.nav {
+  font-family: Teko;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase; }
+
+button {
+  margin: 0;
+  border: 2px #444349 solid;
+  padding: 10px 20px;
+  font-family: Teko;
+  font-size: 25px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #444349;
+  cursor: pointer; }
+
+.button :hover {
+  background: #bb9864;
+  border: 2px #bb9864 solid;
+  color: white; }
+
 .nav_container {
   background-color: #444349; }
 
@@ -161,29 +242,76 @@ a {
     display: flex;
     justify-content: space-between; }
 
-.nav_item {
+.menu-item {
   list-style: none; }
-  .nav_item :hover {
-    background-color: #575560;
-    border-top: 4px #bb9864 solid; }
-  .nav_item a {
-    border-top: 4px #444349 solid;
+  .menu-item a {
     padding: 10px 20px;
-    display: block; }
-  .nav_item div {
+    display: block;
+    box-sizing: border-box; }
+  .menu-item .sub-menu {
     background-color: #444349;
     position: absolute;
     display: none;
     margin: 0;
     padding: 0; }
 
+.menu > li {
+  border-top: 4px #444349 solid; }
+
+.menu > li:hover {
+  background-color: #575560;
+  border-top: 4px #bb9864 solid; }
+
+.current_page_item {
+  border-top: 4px #bb9864 solid; }
+
+.menu-item-has-children ul li :hover {
+  background-color: #575560;
+  border-left: 4px #bb9864 solid; }
+
+h2 {
+  font-family: Teko;
+  color: #bb9864;
+  text-transform: uppercase; }
+
+.sectionTitle {
+  font-size: 50px;
+  color: #bb9864; }
+
+h1 {
+  font-family: Teko;
+  color: #444349;
+  text-transform: uppercase; }
+
+.nav {
+  font-family: Teko;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase; }
+
+button {
+  margin: 0;
+  border: 2px #444349 solid;
+  padding: 10px 20px;
+  font-family: Teko;
+  font-size: 25px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #444349;
+  cursor: pointer; }
+
+.button :hover {
+  background: #bb9864;
+  border: 2px #bb9864 solid;
+  color: white; }
+
 .firstScreen {
-  background-image: url(../images/firstScreen.png);
+  background-image: url(../images/firstScreen.png) !important;
   background-size: cover;
   height: 80vh; }
 
 .firstScreen_content {
-  padding-left: 190px; }
+  padding-left: 150px; }
 
 .firstScreen_title_text {
   padding: 80px 0 20px 0; }
@@ -196,14 +324,59 @@ a {
   font-size: 35px;
   padding: 10px 25px 5px 25px; }
 
+h2 {
+  font-family: Teko;
+  color: #bb9864;
+  text-transform: uppercase; }
+
+.sectionTitle {
+  font-size: 50px;
+  color: #bb9864; }
+
+h1 {
+  font-family: Teko;
+  color: #444349;
+  text-transform: uppercase; }
+
+.nav {
+  font-family: Teko;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase; }
+
+button {
+  margin: 0;
+  border: 2px #444349 solid;
+  padding: 10px 20px;
+  font-family: Teko;
+  font-size: 25px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #444349;
+  cursor: pointer; }
+
+.button :hover {
+  background: #bb9864;
+  border: 2px #bb9864 solid;
+  color: white; }
+
+.productItems {
+  display: flex;
+  align-items: center; }
+
+.mobileSlider {
+  display: none; }
+
 .titleContainer {
   margin: 60px 0;
   display: grid;
+  grid-template: "sectionTitle1 viewMore2 sliderItem3";
   grid-template-columns: auto 1fr 150px;
   justify-content: start;
   align-items: center; }
 
 .sliderItem {
+  grid-area: sliderItem3;
   justify-self: end;
   margin-right: 20px;
   display: flex; }
@@ -217,6 +390,9 @@ a {
 .Fors {
   transform: scale(-1, 1); }
 
+.viewMore {
+  grid-area: viewMore2; }
+
 .viewMore_link {
   margin-left: 60px;
   display: block;
@@ -227,11 +403,10 @@ a {
 
 .itemsContainer {
   width: 1200px;
-  margin: 50px auto;
+  margin: 0px auto;
   overflow: hidden; }
 
 .itemsContainer_wraper {
-  width: 1700px;
   position: relative;
   left: 0px;
   transition: all ease 1s; }
@@ -260,10 +435,51 @@ a {
 .itemArt {
   margin: 10px auto; }
 
+h2 {
+  font-family: Teko;
+  color: #bb9864;
+  text-transform: uppercase; }
+
+.sectionTitle {
+  font-size: 50px;
+  color: #bb9864; }
+
+h1 {
+  font-family: Teko;
+  color: #444349;
+  text-transform: uppercase; }
+
+.nav {
+  font-family: Teko;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase; }
+
+button {
+  margin: 0;
+  border: 2px #444349 solid;
+  padding: 10px 20px;
+  font-family: Teko;
+  font-size: 25px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #444349;
+  cursor: pointer; }
+
+.button :hover {
+  background: #bb9864;
+  border: 2px #bb9864 solid;
+  color: white; }
+
 .newsItem {
   margin-bottom: 80px;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template: "a1 a2"; }
+
+.newsContent {
+  grid-area: a2; }
 
 .newsText {
   margin-top: 10px;
@@ -272,7 +488,8 @@ a {
 
 .newsFooter {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-top: 10px; }
 
 .newsViews {
   display: flex;
@@ -281,6 +498,7 @@ a {
     margin-right: 10px; }
 
 .newsimgWraper {
+  grid-area: a1;
   width: 520px;
   height: 300px;
   position: relative; }
@@ -300,9 +518,46 @@ a {
   height: 275px;
   transition: 0.9s ease; }
 
+h2 {
+  font-family: Teko;
+  color: #bb9864;
+  text-transform: uppercase; }
+
+.sectionTitle {
+  font-size: 50px;
+  color: #bb9864; }
+
+h1 {
+  font-family: Teko;
+  color: #444349;
+  text-transform: uppercase; }
+
+.nav {
+  font-family: Teko;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase; }
+
+button {
+  margin: 0;
+  border: 2px #444349 solid;
+  padding: 10px 20px;
+  font-family: Teko;
+  font-size: 25px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #444349;
+  cursor: pointer; }
+
+.button :hover {
+  background: #bb9864;
+  border: 2px #bb9864 solid;
+  color: white; }
+
 .footerContainer {
   padding-top: 40px;
   display: grid;
+  grid-template: "footerContact1 footerNews2  footerLinks3";
   grid-template-columns: 250px 1fr 1fr; }
 
 .footerTitle {
@@ -322,7 +577,17 @@ a {
 
 .footerIcon {
   fill: #bb9864;
-  height: 20px; }
+  height: 20px;
+  width: 20px; }
+
+.footerContact {
+  grid-area: footerContact1; }
+
+.footerLinks {
+  grid-area: footerLinks3; }
+
+.footerNews {
+  grid-area: footerNews2; }
 
 .footerNewItem {
   margin-bottom: 20px;
@@ -354,6 +619,8 @@ a {
 .footerNewItem_view {
   padding-top: 10px; }
   .footerNewItem_view svg {
+    fill: white;
+    width: 20px;
     padding-right: 5px; }
 
 .footerButtons {
@@ -370,7 +637,8 @@ a {
 
 .footerButtonIcon {
   height: 15px;
-  fill: white; }
+  fill: white;
+  width: 15px; }
 
 .footerNav_ul {
   display: grid;
@@ -400,6 +668,7 @@ a {
   color: #b3b3b3; }
 
 .bussinesSuptitle {
+  grid-area: viewMore2;
   margin-left: 20px;
   font-style: italic;
   font-size: 20px; }
@@ -426,18 +695,23 @@ a {
 
 .bussinesItem_content {
   display: grid;
+  grid-template: "bisNum1 bisCont2";
   margin-left: 50px;
   grid-template-columns: 50px auto; }
 
 .bussinesItem_content_num {
+  grid-area: bisNum1;
   font-size: 100px;
   color: #bb9864; }
 
 .bussinesItem_content_text {
+  grid-area: bisCont2;
   font-size: 22px;
   font-style: italic; }
 
 .quetionForm {
+  margin: 0 auto;
+  text-align: center;
   height: 500px;
   display: flex;
   align-items: center; }
@@ -473,7 +747,7 @@ input:placeholder-shown + label {
 .quetionForm_form {
   position: relative;
   z-index: 1;
-  width: 600px;
+  width: 400px;
   height: 300px;
   padding: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }

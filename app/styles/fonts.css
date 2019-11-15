@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Teko";
+  src: url("../fonts/teko-webfont.eot");
+  src: url("../fonts/teko-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/teko-webfont.woff") format("woff"), url("../fonts/teko.ttf") format("truetype");
+  src: url("../fonts/teko.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-medium-webfont.eot");
+  src: url("../fonts/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-medium-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-Medium.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-mediumitalic-webfont.eot");
+  src: url("../fonts/montserrat-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-mediumitalic-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-MediumItalic.ttf");
+  font-weight: normal;
+  font-style: italic; }
+
+/*# sourceMappingURL=fonts.css.map */

@@ -1,0 +1,66 @@
+@import "variables";
+.newsTitle {
+  font-size: 40px;
+  color: $gray;
+}
+.newsText {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.newsItem {
+  margin-bottom: 80px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template: "a1 a2";
+}
+.newsContent {
+  grid-area: a2;
+}
+
+.newsText {
+  margin-top: 10px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.newsFooter {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.newsViews {
+  display: flex;
+  margin-right: 20px;
+  svg {
+    margin-right: 10px;
+  }
+}
+
+// For newsImage
+
+.newsimgWraper {
+  grid-area: a1;
+  width: 520px;
+  height: 300px;
+  position: relative;
+}
+
+.newsImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 0.9s ease;
+  img {
+    display: block;
+  }
+}
+
+.imgFrame {
+  position: absolute;
+  border: 3px $gold solid;
+  width: 495px;
+  height: 275px;
+  transition: 0.9s ease;
+}

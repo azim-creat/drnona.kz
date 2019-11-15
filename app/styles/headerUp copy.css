@@ -1,0 +1,36 @@
+.hederup {
+  margin-top: 5px;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 250px;
+  grid-template-columns: 1fr 1fr 250px;
+  -ms-grid-columns: 1fr 1fr 250px;
+  justify-content: space-around;
+  align-items: center; }
+
+.phoneNumber_icon {
+  height: 25px;
+  width: 35px;
+  fill: #444349; }
+
+.phoneNumber {
+  -ms-grid-column: 2;
+  display: flex;
+  justify-self: end;
+  -ms-grid-column-align: end; }
+  .phoneNumber img {
+    margin-right: 10px; }
+
+.header_button {
+  -ms-grid-column: 3;
+  -ms-grid-column-align: end;
+  justify-self: end; }
+
+.header_plaseForMenuButton {
+  -ms-grid-column: 4;
+  padding: 0 20px;
+  width: 40px;
+  fill: #444349; }
+  .header_plaseForMenuButton svg {
+    display: none; }
+
+/*# sourceMappingURL=headerUp copy.css.map */

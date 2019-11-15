@@ -1,64 +1,7 @@
-@font-face {
-  font-family: "Teko";
-  src: url("./fonts/teko.ttf");
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("./fonts/ontserrat-Medium.ttf");
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("./fonts/ontserrat-MediumItalic.ttf");
-  font-style: italic;
-}
+@import "variables";
+@import 'fonts';
+@import 'clearDefaultStyle';
 
-$gray: #444349; //main gray color
-$lightGray: #b3b3b3;
-$gold: #bb9864; //main gold color
-
-//for title of Section
-%title {
-  font-family: Teko;
-  color: $gold;
-  text-transform: uppercase;
-}
-//for gold title of section
-%goldTitle {
-  font-size: 50px;
-  color: $gold;
-}
-//for gray title
-%gTitle {
-  font-family: Teko;
-  color: $gray;
-  text-transform: uppercase;
-}
-//for white title nav menu
-%wTitle {
-  font-family: Teko;
-  font-size: 30px;
-  color: white;
-  text-transform: uppercase;
-}
-
-//for button doesn`t hovered
-%b {
-  margin: 0;
-
-  border: 2px $gray solid;
-  padding: 10px 20px;
-  font-family: Teko;
-  font-size: 25px;
-  text-transform: uppercase;
-  background: transparent;
-  color: $gray;
-  cursor: pointer;
-}
-%bhover {
-  background: $gold;
-  border: 2px $gold solid;
-  color: white;
-}
 button {
   @extend %b;
   line-height: 1;
@@ -73,21 +16,33 @@ button {
 }
 
 body {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 16px;
   color: $gray;
 }
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-div {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
+
+//Scroll decoration customize
+body:scrollbar-track {
+  background-color: #f5f5f5;
 }
+
+body:scrollbar {
+  width: 8px;
+  background-color: #95e1d3;
+}
+
+body:scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #95e1d3;
+}
+
+// Is container for all page
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+//For customize a title of section
 h1 {
   @extend %gTitle;
   font-size: 60px;
@@ -95,18 +50,10 @@ h1 {
 h2 {
   @extend %title;
 }
-.newsTitle {
-  font-size: 40px;
-  color: $gray;
-}
-.newsText {
-  font-size: 16px;
-  line-height: 1.6;
-}
 .sectionTitle {
   @extend %goldTitle;
+  grid-area: sectionTitle1;
 }
-//for decorate h3 text
 h3 {
   font-family: Teko;
   font-size: 30px;
@@ -116,504 +63,17 @@ h3 {
 }
 //for link of more item
 h4 {
-  font: italic 14px Montserrat;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-//For HeaderUp
-.hederup {
-  display: grid;
-  grid-template-columns: 1fr 1fr 250px;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.phoneNumber_icon {
-  height: 25px;
-}
-
-.phoneNumber {
-  display: flex;
-  justify-self: end;
-  img {
-    margin-right: 10px;
-  }
-}
-.header_button {
-  justify-self: end;
-}
-//End of headerUp
-
-//Start of nav menu
-/*.nav_container {
-  background-color: $gray;
-}
-.nav {
-  width: 1200px;
-  margin: 0 auto;
-  @extend %wTitle;
-  display: flex;
-  justify-content: space-between;
-  background-color: $gray;
-  color: white;
-  a {
-    color: white;
-    padding: 15px 40px;
-  }
-}
-
-.nav_item {
-  border-top: 4px $gray solid;
-  margin: 15px 0;
-  :hover {
-    background-color: #575560;
-    border-top: 4px $gold solid;
-  }
-}
-.nav_supItem{
-  border-left: 4px $gray solid;
-  :hover {
-    background-color: #575560;
-    border-left: 4px $gold solid;
-    border-top: 4px #575560 solid;
-  }
-}*/
-
-.nav_container {
-  background-color: $gray;
-}
-
-.nav {
-  width: 1200px;
-  margin: 0 auto;
-  @extend %wTitle;
-  ul {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.nav_item{
-  list-style: none;
-  :hover {
-    background-color: #575560;
-    border-top: 4px $gold solid;
-  }
-  a {
-    border-top: 4px $gray solid;
-    padding: 10px 20px;
-    display: block;
-  }
-  div {
-    background-color:$gray;
-    position: absolute;
-    display: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-}
-
-
-//End navigation menu
-
-//Start first screen
-.firstScreen {
-  background-image: url(../images/firstScreen.png);
-  background-size: cover;
-  height: 80vh;
-}
-.firstScreen_content {
-  padding-left: 190px;
-}
-.firstScreen_title_text {
-  padding: 80px 0 20px 0;
-}
-.firstScreen_suptitle {
-  font-size: 25px;
-  padding-bottom: 20px;
-}
-.forstScreen_button {
-  button {
-    font-size: 35px;
-    padding: 10px 25px 5px 25px;
-  }
-}
-//End first screen
-
-//start of section for product
-
-.titleContainer {
-  margin: 60px 0;
-  display: grid;
-  grid-template-columns: auto 1fr 150px;
-  justify-content: start;
-  align-items: center;
-}
-.sliderItem {
-  justify-self: end;
-  margin-right: 20px;
-  display: flex;
-}
-.itemSlide {
-  fill: $lightGray;
-  width: 25px;
-  :hover {
-    fill: $gray;
-  }
-}
-.Fors {
-  transform: scale(-1, 1);
-}
-.viewMore_link {
-  margin-left: 60px;
-  display: block;
-  color: $lightGray;
-  :focus {
-    font-size: 20px;
-    color: $gray;
-  }
-}
-.itemsContainer {
-  width: 1200px;
-
-  margin: 50px auto;
-  overflow: hidden;
-}
-.itemsContainer_wraper {
-  width: 1700px;
-  position: relative;
-  left: 0px;
-  transition: all ease 1s;
-}
-
-.item {
-  float: left;
-  text-align: center;
-  width: 380px;
-  margin: 10px 10px 5px 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.itmeImg {
-  margin: 20px auto;
-}
-
-.itemName {
-  ::after {
-    display: block;
-    content: "";
-    width: 80%;
-    height: 3px;
-    background-color: $gold;
-    margin: 10px auto;
-  }
-}
-.itemButton {
-  justify-self: center;
-}
-
-.itemArt {
-  margin: 10px auto;
-}
-
-//end of section for product
-
-// newSection start
-.newsItem {
-  margin-bottom: 80px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.newsText {
-  margin-top: 10px;
-  height: 200px;
-  overflow: hidden;
-}
-.newsFooter {
-  display: flex;
-  align-items: center;
-}
-.newsViews {
-  display: flex;
-  margin-right: 20px;
-  svg {
-    margin-right: 10px;
-  }
-}
-
-// For newsImage
-.newsimgWraper {
-  width: 520px;
-  height: 300px;
-  position: relative;
-}
-
-.newsImg {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transition: 0.9s ease;
-  img {
-    display: block;
-  }
-}
-
-.imgFrame {
-  position: absolute;
-  border: 3px $gold solid;
-  width: 495px;
-  height: 275px;
-  transition: 0.9s ease;
-}
-
-
-.footerContainer {
-  padding-top: 40px;
-  display: grid;
-  grid-template-columns: 250px 1fr 1fr;
-}
-.footerTitle {
-  color: white;
-  margin-bottom: 20px;
-}
-
-.footerGgrayBg {
-  background: $gray;
-}
-
-.footerText {
-  padding-top: 15px;
-  display: flex;
-  align-items: center;
-  color: white;
-  svg {
-    margin-right: 10px;
-  }
-}
-.footerIcon {
-  fill: $gold;
-  height: 20px;
-}
-
-//News section
-
-.footerNewItem {
-  margin-bottom: 20px;
-  position: relative;
-  display: flex;
-}
-
-.footerNewItem_Img img {
-  position: relative;
-  width: 150px;
-  z-index: 1;
-}
-
-.footerNewItem_Img_frame{
-  position: absolute;
-  border: 3px $gold solid;
-  width: 145px;
-  height: 80px;
-  top: -7px;
-  left: -7px;
-  transition: 0.9s ease;
-}
-
-.footerNewItem_content {
-  padding-left: 10px;
-  padding-top: 5px;
-  color: white;
-}
-.footerNewItem_title {
-  text-transform: uppercase;
-}
-.footerNewItem_view {
-  padding-top: 10px;
-  svg {
-    padding-right: 5px;
-  }
-}
-
-.footerButtons {
-  display: flex;
-}
-.footerButton {
-  color: white;
-  :first-child {
-    margin-right: 10px;
-  }
-  button {
-    font-size: 20px;
-    color: white;
-    border: white 2px solid;
-  }
-}
-.footerButtonIcon {
-  height: 15px;
-  fill: white;
-}
-
-.footerNav_ul{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 25px 25px 25px;
-  color: $gold;
-  margin: 0;
-  padding: 15px;
-}
-
-.footerNav_li{
-  color: $gold;
-  span{
-    display: block;
-    color: white;
-    :hover{
-      color: $gold !important;
-    }
-  }
-}
-
-.footerNav_li span:hover{
-  color: $gold !important;
+  font: italic 14px 'Montserrat';
 }
 
 
 
+@import 'headerUp';
+@import 'navigationMenu';
+@import 'firstScreen';
+@import 'products';
+@import 'news';
+@import 'bussines';
+@import 'footer';
+@import 'form';
 
-
-.copiright {
-  
-  background-color: #3b3a3d;
-}
-.copiright_text {
-  text-align: center;
-  padding: 10px;
-  color: $lightGray;
-}
-
-
-
-//for Footer end
-
-// Bussines start
-.bussinesSuptitle{
-  margin-left: 20px;
-  font-style: italic;
-  font-size: 20px;
-}
-
-.bussinesItem{
-  margin-bottom: 40px;
-  display: flex;
-  align-items: center;
-}
-.bussinesItem_Img{
-  position: relative;
-  img{
-    position: relative;
-    z-index: 1;
-  }
-}
-.bussinesItem_Img_frame{
-  position: absolute;
-  top: -13px;
-  left: 13px;
-  width: 98.5%;
-  height: 97.5%;
-  border: 4px $gold solid;
-  transition: 1s ease;
-}
-.bussinesItem_content{
-  display: grid;
-  margin-left: 50px;
-  grid-template-columns: 50px auto;
-}
-
-.bussinesItem_content_num{
-  font-size: 100px;
-  color: $gold;
-}
-
-.bussinesItem_content_text{
-  font-size: 22px;
-  font-style: italic;
-}
-// Bussines end
-
-//FormQuetion start
-.quetionForm {
-  height: 500px;
-  display: flex;
-  align-items: center;
-}
-.quetionForm_Img{
-  position: relative;
-}
-.quetionForm_Img img {
-  width: 450px;
-  height: 450px;
-  position: relative;
-  z-index: 1;
-}
-.quetionForm_Img_frame{
-  position: absolute;
-  width: 425px;
-  height: 425px;
-  border: 4px $gold solid;
-  top: -5px;
-  left:20px;
-  transition: 1s ease;
-}
-
-:active,
-:hover,
-:focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
-input:placeholder-shown + label {
-  opacity: 0;
-  transform: translateY(1rem);
-}
-.quetionForm_form {
-  position: relative;
-  z-index: 1;
-  width: 600px;
-  height: 300px;
-  padding: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.quetionForm_title {
-  font-size: 45px;
-  padding-bottom: 20px;
-}
-.formInput {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: italic;
-  letter-spacing: 1px;
-  width: 350px;
-  border: 0;
-  background-color: white;
-  border-bottom: 1px $lightGray solid;
-  //resize: none;
-    overflow: auto;
-    box-shadow: 0 0 0 30px white inset !important;
-
-}
-
-//FormQuetion end
