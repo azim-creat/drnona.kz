@@ -130,11 +130,6 @@ $(document).ready(function () {
       }
     );
   }
-  // setTimeout( function(){
-  //   alert('test')
-  //   $('.menu-item').children('.sub-menu')}, 3000)
-  
-
 
 //Для открытия Вацап чата
   $(".whatsappButton").on("click", function () {
@@ -159,20 +154,5 @@ $(document).ready(function () {
   });
 
 
-
-
-
-
-
   
-
-})
-
-
-
-
-
-
-
-
-
+}) //End of Window Ready

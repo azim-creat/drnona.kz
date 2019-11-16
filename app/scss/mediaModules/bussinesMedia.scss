@@ -1,0 +1,19 @@
+@media (max-width: 900px) {
+  .bussinesItem {
+    flex-direction: column;
+  }
+} //900
+@media (max-width: 660px) {
+  .bussinesItem_Img {
+    img {
+      width: 90vw;
+    }
+  }
+  .bussinesItem_Img_frame {
+    width: 90vw;
+  }
+} //660
+@media (max-width: px) {
+} //
+@media (max-width: px) {
+} //
