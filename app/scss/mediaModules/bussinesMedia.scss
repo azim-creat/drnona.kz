@@ -3,17 +3,15 @@
     flex-direction: column;
   }
 } //900
+
 @media (max-width: 660px) {
   .bussinesItem_Img {
     img {
-      width: 90vw;
+      width: 80vw;
     }
   }
   .bussinesItem_Img_frame {
-    width: 90vw;
+    width: 80vw;
   }
 } //660
-@media (max-width: px) {
-} //
-@media (max-width: px) {
-} //
+

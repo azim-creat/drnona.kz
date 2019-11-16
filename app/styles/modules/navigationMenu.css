@@ -1,0 +1,45 @@
+.nav {
+  font-family: Teko;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase; }
+
+.nav_container {
+  background-color: #444349; }
+
+.nav {
+  width: 1200px;
+  margin: 0 auto; }
+  .nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-between; }
+
+.menu-item {
+  list-style: none; }
+  .menu-item a {
+    padding: 10px 20px;
+    display: block;
+    box-sizing: border-box; }
+  .menu-item .sub-menu {
+    background-color: #444349;
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0; }
+
+.menu > li {
+  border-top: 4px #444349 solid; }
+
+.menu > li:hover {
+  background-color: #575560;
+  border-top: 4px #bb9864 solid; }
+
+.current_page_item {
+  border-top: 4px #bb9864 solid; }
+
+.menu-item-has-children ul li :hover {
+  background-color: #575560;
+  border-left: 4px #bb9864 solid; }
+
+/*# sourceMappingURL=navigationMenu.css.map */

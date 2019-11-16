@@ -1,0 +1,11 @@
+@media (max-width: 900px) {
+  .bussinesItem {
+    flex-direction: column; } }
+
+@media (max-width: 660px) {
+  .bussinesItem_Img img {
+    width: 80vw; }
+  .bussinesItem_Img_frame {
+    width: 80vw; } }
+
+/*# sourceMappingURL=bussinesMedia.css.map */

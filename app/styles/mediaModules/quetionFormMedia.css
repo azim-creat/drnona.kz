@@ -1,0 +1,32 @@
+@media (max-width: 900px) {
+  .quetionForm {
+    margin-bottom: 50%; }
+  .quetionForm_Img {
+    max-width: 100px; }
+    .quetionForm_Img img {
+      height: auto; } }
+
+@media (max-width: 600px) {
+  #quetionForm {
+    position: relative;
+    right: -50%;
+    transform: translateX(-50%); }
+  .quetionForm {
+    width: 90vw;
+    height: auto; }
+  .quetionForm_form {
+    padding: 20px;
+    margin: 0; }
+  .quetionForm_Img {
+    display: none; } }
+
+@media (max-width: 480px) {
+  .quetionForm {
+    margin: 0 auto;
+    width: 70vw; }
+  .quetionForm_form {
+    width: 65vw; }
+  .formInput {
+    width: 55vw; } }
+
+/*# sourceMappingURL=quetionFormMedia.css.map */

@@ -13,10 +13,11 @@
   
   @font-face {
     font-family: "Montserrat";
+
     src: url("../fonts/montserrat-medium-webfont.eot");
+
     src: url("../fonts/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/montserrat-medium-webfont.woff") format("woff");
-  
+      url("../fonts/montserrat-medium-webfont.woff") format("woff"), url("../fonts/montserrat-Medium.ttf") format("truetype");
     src: url("../fonts/montserrat-Medium.ttf");
     font-weight: normal;
   
@@ -26,7 +27,7 @@
     font-family: "Montserrat";
     src: url("../fonts/montserrat-mediumitalic-webfont.eot");
     src: url("../fonts/montserrat-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/montserrat-mediumitalic-webfont.woff") format("woff");
+      url("../fonts/montserrat-mediumitalic-webfont.woff") format("woff"), url("../fonts/montserrat-MediumItalic.ttf") format("truetype");
     src: url("../fonts/montserrat-MediumItalic.ttf");
     font-weight: normal;
     font-style: italic;

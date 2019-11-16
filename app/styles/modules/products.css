@@ -1,0 +1,76 @@
+.productItems {
+  display: flex;
+  align-items: center; }
+
+.mobileSlider {
+  display: none; }
+
+.titleContainer {
+  margin: 60px 0;
+  display: grid;
+  grid-template: "sectionTitle1 viewMore2 sliderItem3";
+  grid-template-columns: auto 1fr 150px;
+  justify-content: start;
+  align-items: center; }
+
+.sliderItem {
+  grid-area: sliderItem3;
+  justify-self: end;
+  margin-right: 20px;
+  display: flex; }
+
+.itemSlide {
+  fill: #b3b3b3;
+  width: 25px; }
+  .itemSlide :hover {
+    fill: #444349; }
+
+.Fors {
+  transform: scale(-1, 1); }
+
+.viewMore {
+  grid-area: viewMore2; }
+
+.viewMore_link {
+  margin-left: 60px;
+  display: block;
+  color: #b3b3b3; }
+  .viewMore_link :focus {
+    font-size: 20px;
+    color: #444349; }
+
+.itemsContainer {
+  width: 1200px;
+  margin: 0px auto;
+  overflow: hidden; }
+
+.itemsContainer_wraper {
+  position: relative;
+  left: 0px;
+  transition: all ease 1s; }
+
+.item {
+  float: left;
+  text-align: center;
+  width: 380px;
+  margin: 10px 10px 5px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+
+.itmeImg {
+  margin: 20px auto; }
+
+.itemName ::after {
+  display: block;
+  content: "";
+  width: 80%;
+  height: 3px;
+  background-color: #bb9864;
+  margin: 10px auto; }
+
+.itemButton {
+  justify-self: center; }
+
+.itemArt {
+  margin: 10px auto; }
+
+/*# sourceMappingURL=products.css.map */

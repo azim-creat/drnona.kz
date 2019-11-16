@@ -45,7 +45,7 @@ button {
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserrat-medium-webfont.eot");
-  src: url("../fonts/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-medium-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-medium-webfont.woff") format("woff"), url("../fonts/montserrat-Medium.ttf") format("truetype");
   src: url("../fonts/montserrat-Medium.ttf");
   font-weight: normal;
   font-style: normal; }
@@ -53,7 +53,7 @@ button {
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserrat-mediumitalic-webfont.eot");
-  src: url("../fonts/montserrat-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-mediumitalic-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-mediumitalic-webfont.woff") format("woff"), url("../fonts/montserrat-MediumItalic.ttf") format("truetype");
   src: url("../fonts/montserrat-MediumItalic.ttf");
   font-weight: normal;
   font-style: italic; }
@@ -96,16 +96,12 @@ body:scrollbar-thumb {
   border-radius: 8px;
   background-color: #95e1d3; }
 
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
 h1 {
   font-size: 60px; }
-
-.newsTitle {
-  font-size: 40px;
-  color: #444349; }
-
-.newsText {
-  font-size: 16px;
-  line-height: 1.6; }
 
 .sectionTitle {
   grid-area: sectionTitle1; }
@@ -119,10 +115,6 @@ h3 {
 
 h4 {
   font: italic 14px 'Montserrat'; }
-
-.container {
-  width: 1200px;
-  margin: 0 auto; }
 
 h2 {
   font-family: Teko;
@@ -471,6 +463,14 @@ button {
   border: 2px #bb9864 solid;
   color: white; }
 
+.newsTitle {
+  font-size: 40px;
+  color: #444349; }
+
+.newsText {
+  font-size: 16px;
+  line-height: 1.6; }
+
 .newsItem {
   margin-bottom: 80px;
   display: grid;
@@ -517,6 +517,48 @@ button {
   width: 495px;
   height: 275px;
   transition: 0.9s ease; }
+
+.bussinesSuptitle {
+  grid-area: viewMore2;
+  margin-left: 20px;
+  font-style: italic;
+  font-size: 20px; }
+
+.bussinesItem {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center; }
+
+.bussinesItem_Img {
+  position: relative; }
+  .bussinesItem_Img img {
+    position: relative;
+    z-index: 1; }
+
+.bussinesItem_Img_frame {
+  position: absolute;
+  top: -13px;
+  left: 13px;
+  width: 75vw;
+  height: 50vw;
+  border: 4px solid #bb9864;
+  transition: 1s; }
+
+.bussinesItem_content {
+  display: grid;
+  grid-template: "bisNum1 bisCont2";
+  margin-left: 50px;
+  grid-template-columns: 50px auto; }
+
+.bussinesItem_content_num {
+  grid-area: bisNum1;
+  font-size: 100px;
+  color: #bb9864; }
+
+.bussinesItem_content_text {
+  grid-area: bisCont2;
+  font-size: 22px;
+  font-style: italic; }
 
 h2 {
   font-family: Teko;
@@ -667,47 +709,41 @@ button {
   padding: 10px;
   color: #b3b3b3; }
 
-.bussinesSuptitle {
-  grid-area: viewMore2;
-  margin-left: 20px;
-  font-style: italic;
-  font-size: 20px; }
+h2 {
+  font-family: Teko;
+  color: #bb9864;
+  text-transform: uppercase; }
 
-.bussinesItem {
-  margin-bottom: 40px;
-  display: flex;
-  align-items: center; }
-
-.bussinesItem_Img {
-  position: relative; }
-  .bussinesItem_Img img {
-    position: relative;
-    z-index: 1; }
-
-.bussinesItem_Img_frame {
-  position: absolute;
-  top: -13px;
-  left: 13px;
-  width: 98.5%;
-  height: 97.5%;
-  border: 4px #bb9864 solid;
-  transition: 1s ease; }
-
-.bussinesItem_content {
-  display: grid;
-  grid-template: "bisNum1 bisCont2";
-  margin-left: 50px;
-  grid-template-columns: 50px auto; }
-
-.bussinesItem_content_num {
-  grid-area: bisNum1;
-  font-size: 100px;
+.sectionTitle {
+  font-size: 50px;
   color: #bb9864; }
 
-.bussinesItem_content_text {
-  grid-area: bisCont2;
-  font-size: 22px;
-  font-style: italic; }
+h1 {
+  font-family: Teko;
+  color: #444349;
+  text-transform: uppercase; }
+
+.nav {
+  font-family: Teko;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase; }
+
+button {
+  margin: 0;
+  border: 2px #444349 solid;
+  padding: 10px 20px;
+  font-family: Teko;
+  font-size: 25px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #444349;
+  cursor: pointer; }
+
+.button :hover {
+  background: #bb9864;
+  border: 2px #bb9864 solid;
+  color: white; }
 
 .quetionForm {
   margin: 0 auto;
@@ -757,6 +793,7 @@ input:placeholder-shown + label {
   padding-bottom: 20px; }
 
 .formInput {
+  margin-top: 16px;
   font-family: Montserrat;
   font-size: 16px;
   font-style: italic;
@@ -765,7 +802,15 @@ input:placeholder-shown + label {
   border: 0;
   background-color: white;
   border-bottom: 1px #b3b3b3 solid;
-  overflow: auto;
+  resize: none;
+  overflow: hidden;
   box-shadow: 0 0 0 30px white inset !important; }
+  .formInput textarea {
+    resize: none !important; }
+
+.formInput_textarea {
+  resize: none !important; }
+  .formInput_textarea textarea {
+    resize: none !important; }
 
 /*# sourceMappingURL=style.css.map */
