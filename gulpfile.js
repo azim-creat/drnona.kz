@@ -32,7 +32,23 @@ gulp.task('autoprefixer1', () => {
 //Источник CSS файлов
 const cssFiles = [
     './app/styles/style.css',
-    './app/styles/media.css'
+    './app/styles/modules/headerUp.css',
+    './app/styles/modules/navigationMenu.css',
+
+    './app/styles/modules/firstScreen.css',
+    './app/styles/modules/products.css',
+    './app/styles/modules/news.css',
+    './app/styles/modules/bussines.css',
+    './app/styles/modules/form.css',
+    './app/styles/modules/footer.css',
+    './app/styles/media.css',
+    './app/styles/mediaModules/headerUpMedia.css',
+    './app/styles/mediaModules/firstScreenMedia.css',
+    './app/styles/mediaModules/productMedia.css',
+    './app/styles/mediaModules/newsMedia.css',
+    './app/styles/mediaModules/bussinesMedia.css',
+    './app/styles/mediaModules/quetionFormMedia.css',
+    './app/styles/mediaModules/footerMedia.css',
 ];
 
 //Источник JS файлов

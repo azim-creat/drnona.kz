@@ -75,4 +75,12 @@
     width: 80vw;
     height: 45vw; } }
 
+@media (max-width: 430px) {
+  .newsViews {
+    display: none; }
+  .newsFooter {
+    justify-items: center; }
+  .buttonNews button {
+    width: 88vw; } }
+
 /*# sourceMappingURL=newsMedia.css.map */

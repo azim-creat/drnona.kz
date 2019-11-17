@@ -26,6 +26,7 @@
     display: none;
   }
   .whatsappButton {
+    margin-top: 20px;
     button {
       width: 80vw;
     }
@@ -33,6 +34,7 @@
   .footerContact {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
   }
   .footerText {
     justify-self: end;
@@ -46,12 +48,12 @@
   }
 } //750
 
-@media (max-width: 480px) {
-    .newsFooter{
-        flex-direction: column;
-      }
+// @media (max-width: 480px) {
+//     .newsFooter{
+//         flex-direction: column;
+//       }
 
-} //480
+// } //480
 
-@media (max-width: px) {
-} //
+// @media (max-width: px) {
+// } //

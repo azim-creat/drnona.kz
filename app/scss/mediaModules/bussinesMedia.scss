@@ -1,4 +1,7 @@
 @media (max-width: 900px) {
+  .bussinesItem_content{
+    margin-left: 0px;
+  }
   .bussinesItem {
     flex-direction: column;
   }
@@ -11,7 +14,17 @@
     }
   }
   .bussinesItem_Img_frame {
-    width: 80vw;
+    width: 76vw;
+    height: 50vw;
   }
-} //660
 
+} //660
+@media (max-width: 500px){
+  .bussinesItem_content_num{
+    font-size: 60px;
+  }
+  .bussinesItem_content_text{
+    font-size: 16px;
+  }
+
+}

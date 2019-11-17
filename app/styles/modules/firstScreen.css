@@ -1,7 +1,7 @@
 .firstScreen {
   background-image: url(../images/firstScreen.png) !important;
   background-size: cover;
-  height: 80vh; }
+  height: 700px; }
 
 .firstScreen_content {
   padding-left: 150px; }
