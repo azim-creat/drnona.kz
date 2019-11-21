@@ -23,8 +23,10 @@
 
 @media (max-width: 600px) {
   .firstScreen {
+    
+    background: url(../images/firstScreen400.png) center no-repeat;
+    //background-size: cover;
     height: 400px;
-    background: url(../images/firstScreenMob.png) left;
   }
 } //600
 

@@ -20,7 +20,8 @@
 
 .newsText {
   margin-top: 10px;
-  height: 200px;
+  max-height: 200px;
+  height: auto;
   overflow: hidden;
 }
 

@@ -72,11 +72,11 @@ $(document).ready(function () {
 
   $('.quetionForm').hover(
     function () {
-      $(".quetionForm_Img_frame", this).css({ "width": "80vw" })
+      $(".quetionForm_Img_frame", this).css({ "width": "900px" })
 
     },
     function () {
-      $(".quetionForm_Img_frame", this).css({ "width": "80vw" })
+      $(".quetionForm_Img_frame", this).css({ "width": "900px" })
     }
   );
 

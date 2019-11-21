@@ -48,17 +48,10 @@
   }
 } //750
 
-// @media (max-width: 480px) {
-//     .newsFooter{
-//         flex-direction: column;
-//       }
+@media(max-width:600px){
 
-// } //480
-
-// @media (max-width: px) {
-// } //
-//Test text 
-body{
-  background-color: rgb(214, 33, 88);                      
-}       
-       
+.footerContainer {
+  padding-top: 20px;
+  
+}
+}

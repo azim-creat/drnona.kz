@@ -1,13 +1,19 @@
 @import "variables";
-
+.quetionForm_wraper{
+  position: relative;
+  height: 500px;
+}
 .quetionForm {
+
   margin: 0 auto;
   text-align: center;
   height: 500px;
   display: flex;
   align-items: center;
+
 }
 .quetionForm_Img {
+
   position: relative;
 }
 .quetionForm_Img img {
@@ -38,6 +44,7 @@ input:placeholder-shown + label {
   transform: translateY(1rem);
 }
 .quetionForm_form {
+ 
   position: relative;
   z-index: 1;
   width: 400px;
@@ -72,5 +79,12 @@ input:placeholder-shown + label {
   resize: none !important;
   textarea{
     resize: none !important;
+  }
+}
+
+.quetionForm_button{
+  margin-top: 10px;
+  button{
+    width: 350px;
   }
 }
