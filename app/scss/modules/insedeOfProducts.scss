@@ -1,0 +1,66 @@
+@import "variables";
+.productName {
+  font-size: 40px;
+  color: $gold;
+}
+
+.productItem {
+  margin-bottom: 80px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template: "productImg productDiscription";
+  grid-template-columns: 400px 1fr;
+
+}
+.productImg {
+ 
+  grid-area: productImg;
+  img{
+    height: auto;
+    width: 400px;
+  }
+}
+
+.productContent {
+  grid-area: productDiscription ;
+}
+
+.productDescription{
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: 10px;
+  height: auto;
+  overflow: hidden;
+}
+
+.newsFooter {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+ 
+.newsViews {
+  display: flex;
+  margin-right: 20px;
+  svg {
+    margin-right: 10px;
+  }
+}
+
+
+
+
+.parabenFree{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  font-family: 'Teko';
+  text-transform: uppercase;
+  font-size: 20px;
+  svg{
+    padding-right: 10px;
+    fill: $gray;
+    width: 25px;
+  }
+}
