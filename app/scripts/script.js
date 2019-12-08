@@ -1,53 +1,54 @@
-
 $(document).ready(function () {
+  // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+  // Скрывается и открывается кнопка меню
+  $('.menuBotton').click(() => {
+    $('nav').toggleClass('active')
+  });
+  // Скрывается и открывается кнопка меню
+  //↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
-  var left = 0;
-  var numOfProduct = $('.itemsContainer_wraper .item').length;
-  var polosa = document.getElementById('polosa');
-  var itemWidth = 400;
-  var windowWidth = $(window).width();
-  if (windowWidth <= 480) {
-    itemWidth = 300
-  }
-  $('.itemsContainer_wraper').css('width', numOfProduct * itemWidth + 'px')
-  $('.Fors').click(function () {
-    left = left - itemWidth;
-    if (left < -284 * numOfProduct) {
-      left = 0;
 
+  // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+  // Скрытие и поднятие меню
+  var lastScrollTop = 0;
+  $(window).scroll(function (event) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+      $('.allHeaders').removeClass('fixed');
+    } else {
+      $('.allHeaders').addClass('fixed');
     }
-    polosa.style.left = left + 'px';
+    lastScrollTop = st;
   });
 
-  $('.Back').click(function () {
+  // Скрытие и поднятие меню 
+  //↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
-    left = left + itemWidth;
-    if (left > -1) {
-      left = 0;
-    }
-    polosa.style.left = left + 'px';
-  });
-
-
-  $('.itemsContainer').swipe({
-    swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-      if (direction == "left") {
-        left = left - distance;
-        if (left < -284 * numOfProduct) {
-          left = 0;
-        }
-        polosa.style.left = left + 'px';
-
-      }
-      if (direction == "right") {
-        left = left + distance;
-        if (left > -1) {
-          left = 0;
-        }
-        polosa.style.left = left + 'px';
-      }
+  // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+  // свайпы и прокрутка товаров
+  // Код из бибилиотеки swiper ↓↓↓↓↓↓↓
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    freeMode: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      500: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
     }
   });
+  // Код из бибилиотеки swiper ↑↑↑↑↑↑↑↑↑↑↑↑
+  // свайпы и прокрутка товаров
+  //↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
 
   $('.newsItem').hover(
     function () {
@@ -141,10 +142,6 @@ $(document).ready(function () {
     window.open('#quetionForm');
   });
 
-  //Открытие бокового меню на моб устройствах
-  $('#menuButton').click(function () {
-    $('.nav_container').toggleClass('togleSideMenu')
-  })
 
   //при изменение размера экрана сбрасывать открытое меню
   $(window).resize(function () {
@@ -154,8 +151,6 @@ $(document).ready(function () {
   });
 
   //Autogrow textarea
-
-
   var idNum = 0, data = 'elastic';
   $('body').on('keyup', 'textarea[data^="' + data + '"]', function () {
     if ($(this).attr('data') == '' + data + '') { $(this).attr({ style: 'overflow:hidden;' + $(this).attr('style') + '', data: '' + $(this).attr('data') + '' + idNum + '' }); idNum++; }
@@ -170,7 +165,10 @@ $(document).ready(function () {
       $(this).css('height', '' + $('div[data="' + tData.replace('' + data + '', 'clone') + '"]').css('height') + '');
     }
   });
-  
+
+
+
+
 
 
 }) //End of Window Ready

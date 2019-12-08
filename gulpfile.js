@@ -64,6 +64,7 @@ let scssFiles = [
   './app/scss/modules/bussines.scss',
   './app/scss/modules/form.scss',
   './app/scss/modules/footer.scss',
+  './app/scss/modules/about.scss',
   './app/scss/media.scss',
   './app/scss/mediaModules/headerUpMedia.scss',
   './app/scss/mediaModules/firstScreenMedia.scss',

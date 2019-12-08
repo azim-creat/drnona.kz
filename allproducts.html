@@ -7,187 +7,96 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DrNona</title>
     <link rel="shortcut icon" href="./dist/images/favicon.ico" type="image/x-icon">
-
     <link rel="icon" href="./dist/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/styles/scrol.css">
     <link rel="stylesheet" href="./dist/styles/all.css">
 </head>
 
 <body>
-
-    <section class="allHeaders">
-        <header>
-            <div class="container">
-                <div class="hederup">
-                    <div class="headerup_logo">
-                        <img src="./dist/images/logo.png" alt="isLogo">
-                    </div>
-                    <div class="phoneNumber">
-                        <svg class="phoneNumber_icon" x="0px" y="0px" viewbox="0 0 511.999 511.999" width="512px"
-                            height="512px">
-                            <path
-                                d="M498.827,377.633l-63.649-63.649c-17.548-17.547-46.102-17.547-63.649,0l-28.931,28.931    c-13.294,13.294-34.926,13.29-48.215,0.005l-125.4-125.507c-13.325-13.325-13.327-34.892,0-48.219    c4.66-4.66,18.041-18.041,28.931-28.931c17.471-17.47,17.715-45.935-0.017-63.665l-63.632-63.432    C116.717-4.381,88.164-4.381,70.663,13.12C57.567,26.102,53.343,30.29,47.471,36.111c-63.28,63.279-63.28,166.242-0.003,229.519    l198.692,198.796c63.428,63.429,166.088,63.434,229.521,0l23.146-23.145C516.375,423.733,516.375,395.181,498.827,377.633z     M91.833,34.382c5.849-5.849,15.365-5.85,21.233,0.016l63.632,63.432c5.863,5.863,5.863,15.352,0,21.216l-10.609,10.608    l-84.81-84.81L91.833,34.382z M267.38,443.213L68.687,244.415c-48.958-48.958-51.649-125.833-8.276-178.006l84.564,84.564    c-22.22,25.189-21.294,63.572,2.787,87.653l125.396,125.501c0.001,0.001,0.003,0.003,0.004,0.004    c24.055,24.056,62.436,25.042,87.656,2.792l84.566,84.566C393.377,494.787,316.675,492.508,267.38,443.213z M477.612,420.065    l-10.609,10.609l-84.865-84.866l10.607-10.608c5.85-5.849,15.367-5.85,21.217,0l63.649,63.649    C483.461,404.699,483.461,414.217,477.612,420.065z" />
-                        </svg>
-
-                        <h3 class="phoneNumber_num">+77077077777</h3>
-                    </div>
-                    <div class="header_button button connectMeBt">
-                        <button>
-                            связаться со мной
-                        </button>
-                    </div>
-                    <div class="header_plaseForMenuButton" id="menuButton">
-                        <svg x="0px" y="0px" viewbox="0 0 459 459">
-                            <path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z" />
-                        </svg>
-                    </div>
+    <header>
+        <div class="container">
+            <div class="hederup">
+                <div class="headerup_logo">
+                    <img src="./dist/images/logo.png" alt="isLogo">
                 </div>
-            </div>
-        </header>
-        <div class="header">
-            <div class="nav-container">
-                <nav>
-                    <div class="menuIcons"></div>
-                    <div class="menuBotton openBotton">
-                        <svg x="0px" y="0px" viewbox="0 0 459 459">
-                            <path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z" />
-                        </svg>
-                    </div>
-                    <div class="menuBotton clouseBotton">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 357 357"
-                            style="enable-background:new 0 0 357 357;" xml:space="preserve">
-                            <g id="close">
-                                <polygon
-                                    points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 214.2,178.5" />
-                            </g>
-                        </svg>
-                    </div>
+                <div class="phoneNumber">
+                    <svg class="phoneNumber_icon" x="0px" y="0px" viewbox="0 0 511.999 511.999" width="512px"
+                        height="512px">
+                        <path
+                            d="M498.827,377.633l-63.649-63.649c-17.548-17.547-46.102-17.547-63.649,0l-28.931,28.931    c-13.294,13.294-34.926,13.29-48.215,0.005l-125.4-125.507c-13.325-13.325-13.327-34.892,0-48.219    c4.66-4.66,18.041-18.041,28.931-28.931c17.471-17.47,17.715-45.935-0.017-63.665l-63.632-63.432    C116.717-4.381,88.164-4.381,70.663,13.12C57.567,26.102,53.343,30.29,47.471,36.111c-63.28,63.279-63.28,166.242-0.003,229.519    l198.692,198.796c63.428,63.429,166.088,63.434,229.521,0l23.146-23.145C516.375,423.733,516.375,395.181,498.827,377.633z     M91.833,34.382c5.849-5.849,15.365-5.85,21.233,0.016l63.632,63.432c5.863,5.863,5.863,15.352,0,21.216l-10.609,10.608    l-84.81-84.81L91.833,34.382z M267.38,443.213L68.687,244.415c-48.958-48.958-51.649-125.833-8.276-178.006l84.564,84.564    c-22.22,25.189-21.294,63.572,2.787,87.653l125.396,125.501c0.001,0.001,0.003,0.003,0.004,0.004    c24.055,24.056,62.436,25.042,87.656,2.792l84.566,84.566C393.377,494.787,316.675,492.508,267.38,443.213z M477.612,420.065    l-10.609,10.609l-84.865-84.866l10.607-10.608c5.85-5.849,15.367-5.85,21.217,0l63.649,63.649    C483.461,404.699,483.461,414.217,477.612,420.065z" />
+                    </svg>
 
-                    <ul class="nav-list">
-                        <li>
-                            <a href="#">Главная</a>
-                        </li>
-                        <li class="current-menu-parent menu-item-has-children">
-                            <a href="#">Продукция</a>
-                            <ul class="sub-menu ">
-                                <li class="current-menu-item">
-                                    <a href="#">Омоложение </a>
-                                </li>
-                                <li>
-                                    <a href="#">Востановление </a>
-                                </li>
-                                <li>
-                                    <a href="#">Питание </a>
-                                </li>
-                                <li>
-                                    <a href="#">Парфюм </a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="#">Для Мужчин </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Для женщин </a>
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a href="#">Реферальная </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">план </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">О нас</a>
-                        </li>
-                        <li>
-                            <a href="#">Бизнес</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="#">Реферальная </a>
-                                </li>
-                                <li>
-                                    <a href="#">план </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Новости</a>
-                        </li>
-                        <li>
-                            <a href="#">Блог</a>
-                        </li>
-
-                    </ul>
-                </nav>
+                    <h3 class="phoneNumber_num">+77077077777</h3>
+                </div>
+                <div class="header_button button connectMeBt">
+                    <button>
+                        связаться со мной
+                    </button>
+                </div>
+                <div class="header_plaseForMenuButton" id="menuButton">
+                    <svg x="0px" y="0px" viewbox="0 0 459 459">
+                        <path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z" />
+                    </svg>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="nav_container">
+            <nav class="nav">
+                <ul id="primary-menu" class="menu">
+                    <li id="menu-item-6"
+                        class="menu-item  menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-6">
+                        <a href="index.html" aria-current="page">Главная</a></li>
+                    <li id="menu-item-9"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9">
+                        <a href="products.html">
 
-    <section>
-        <div class="container">
+                            Продукция
 
-                <div class="productItem">
-                    <div class="productImg">
-                        <img src="./dist/images/item.png" alt="">
-                        <h3>Основные ингредиенты:</h3>
 
-                            <p class="productDescription">Формула Halo ComplexTM, масло виноградных косточек, алоэ вера, пробиотик, аргановое масло,
-                            ферментированный экстракт черного чая</p> 
-                            <p class="parabenFree">
-                                    <svg version="1.1" id="Capa51" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="82.413px"
-                                    height="82.412px" viewbox="0 0 82.413 82.412"
-                                    style="enable-background:new 0 0 82.413 82.412;" xml:space="preserve">
-    
-                                    <path d="M71.215,40.861L82.008,22.16L69.853,1.102H45.539l-11,19.049H12.149L0,41.207l12.156,21.056h22.793l10.997,19.048h24.312
-           l12.155-21.053L71.215,40.861z M47.855,5.118h19.678l9.839,17.039l-9.839,17.037H47.855l-9.836-17.037L47.855,5.118z
-            M34.153,58.245H14.476L4.639,41.207l9.837-17.04h19.678l9.835,17.04L34.153,58.245z M67.937,77.293H48.259l-9.835-17.035
-           l9.835-17.043h19.678l9.835,17.043L67.937,77.293z" />
-                                    <polygon
-                                        points="16.208,27.053 8.112,41.176 15.776,55.717 18.444,54.31 11.546,41.234 18.818,28.548 		" />
-                                    <polygon
-                                        points="71.914,22.773 74.446,21.147 65.298,6.899 49.581,6.899 49.581,9.909 63.652,9.909 		" />
-                                    <polygon
-                                        points="67.139,46.018 64.487,47.438 71.448,60.422 64.515,72.242 67.109,73.771 74.904,60.487 		" />
-    
-                                    </svg>
-                                    Не содержит парабенов
-                                </p>
-                    </div>
+                        </a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-8"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a
+                                    href="http://#">Питание кожи</a></li>
+                            <li id="menu-item-14"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
+                                    href="http://#">Восстановление</a></li>
+                            <li id="menu-item-15"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a
+                                    href="http://#">Омоложение</a></li>
+                            <li id="menu-item-16"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a
+                                    href="http://#">Детская линия</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
+                        <a href="http://#">О нас</a></li>
+                    <li id="menu-item-11"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11">
+                        <a href="http://#">Бизнес возможности</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-17"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a
+                                    href="http://#">Бизнес план</a></li>
+                            <li id="menu-item-18"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a
+                                    href="http://#">Реферальная система</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
+                        <a href="http://#">Блог</a></li>
+                    <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
+                        <a href="http://#">Новости</a></li>
+                </ul>
+            </nav>
+        </div>
 
-                    <div class="productContent">
-                        <h2 class="productName">Антивозрастной Серум</h2>
-                        <p class="productDescription">
-                            Хотите выглядеть молодо? Хотите чтобы мелкие морщинки не портили вам настроение? Тогда этот
-                            Серум для вас!
-                            Эффективный косметологический препарат с большой концентрацией биологически активных
-                            веществ. Антивозрастной Серум увлажняет и возвращает увядающей коже лица и шеи желанную
-                            гладкость, упругость, свежесть и здоровый вид.
+    </header>
+    <br>
+    <br>
 
-                            Решает проблемы, связанные:
-                            – со старением кожи;
-                            – с сухостью и шелушением;
-                            – с борьбой со свободными радикалами.
-                            Но самая главная заслуга Серума: способствовать более глубокому проникновению других
-                            препаратов компании в кожный покров лица.
-                            Аргановое масло – увлажняет, питает и восстанавливает кожные покровы. Обладает
-                            восстанавливающим, противовоспалительным и заживляющим действиями.
-                            Ферментированный экстракт черного чая (Saccharomyces/Xylinum Black Tea Ferment) – мощный
-                            антиоксидант, восстанавливающий волокна эластина и коллагена, путем утилизации сахара:
-                            обеспечивается anti-age эффект: уплотняется подкожная жировая ткань, разглаживаются морщинки
-                            на лице.
-                            Пробиотик (Lactobacillus Ferment Filtrate) – лактобактерии, регулирующие работу иммунной
-                            системы кожи. Пробиотики в косметологии – это новое направление. Они влияют на микрофлору
-                            кожи, улучшая её защитные функции. Увлажняют и стимулируют её заживление.
-                        </p>                
-                    </div>
-                </div>
-            </div>
-    </section>
+
+
 
     <section>
         <div class="container">
@@ -219,13 +128,12 @@
             <div class="productItems">
                 <div class="itemsContainer">
 
-                    <div class="itemsContainer_wraper" id="polosa">
                         <div class="item">
                             <div class="itmeImg">
                                 <img src="./dist/images/item.png" alt="">
                             </div>
                             <div class="itemName">
-                                <h3>Масло Ши для телa1</h3>
+                                <h3>Масло Ши для  телa1телa1 телa1 телa1 телa1</h3>
                             </div>
                             <div class="itemButton button">
                                 <button>
@@ -257,7 +165,7 @@
                                 <img src="./dist/images/item.png" alt="arrow">
                             </div>
                             <div class="itemName">
-                                <h3>Масло Ши для телa3</h3>
+                                <h3>Масло Ши для  т1 телa1 телa3</h3>
                             </div>
                             <div class="itemButton button">
                                 <button>
@@ -289,7 +197,7 @@
                                 <img src="./dist/images/item.png" alt="arrow">
                             </div>
                             <div class="itemName">
-                                <h3>Продукт 5</h3>
+                                <h3> телa1телa1 телa1 телa1 телa1 5</h3>
                             </div>
                             <div class="itemButton button">
                                 <button>
@@ -321,7 +229,7 @@
                                 <img src="./dist/images/item.png" alt="arrow">
                             </div>
                             <div class="itemName">
-                                <h3>Продукт 7</h3>
+                                <h3>Проду телa1телa1 телa1 телa1 телa1кт 7</h3>
                             </div>
                             <div class="itemButton button">
                                 <button>
@@ -380,7 +288,6 @@
                                 артикуль 12234
                             </h4>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
